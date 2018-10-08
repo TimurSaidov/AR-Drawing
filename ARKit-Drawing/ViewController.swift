@@ -250,11 +250,13 @@ extension ViewController: OptionsViewControllerDelegate { // Методы delega
             node.removeFromParentNode()
             placedNodes.removeFirst()
         }
+        print(placedNodes)
         
         planeNodes.forEach { (node) in
             node.removeFromParentNode()
             planeNodes.removeFirst()
         }
+        print(planeNodes)
         
         selectedNode = nil
         reloadConfiguration()
